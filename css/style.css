@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: #707273;
+	color: white;
+}
+
+.title {
+	width: 100%;
+	margin: 2.5rem 0;
+	text-align: center;
+}
+
+#table {
+	width: 75%;
+}
+td, tr {
+	color: white;
+}
+tr {
+	text-align: center;
+}
