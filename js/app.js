@@ -24,6 +24,12 @@ function get_cookies() {
 	* y las devuelve en un array de objetos con estructura:
 	* {cookie: "nombre_cookie", valor: "valor_cokie"}
 	*/
+	const arrayCookies = document.cookie.split('; ');
+	const cookies = arrayCookies.map(cookie => {
+		const [nameCookie, valueCookie] = cookie.split('=');
+		return { cookie: nameCookie, valor: valueCookie };
+	});
+	return cookies;
 }
 
 function print_cookies(cookies) {
