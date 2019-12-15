@@ -34,4 +34,19 @@ function get_cookies() {
 
 function print_cookies(cookies) {
 	// TODO: Metodo que modifica el DOM para crear filas en la tabla con el array de cookies que se pasan por parametros
+	cookies.forEach(cookie => {
+		setTableRowTemplate(cookie);
+	});
+}
+
+function setTableRowTemplate(cookie) {
+	// TODO: Crea la plantilla de una fila de la tabla
+	const tBody = document.querySelector('.tBody');
+	tBody.innerHTML += `
+		<tr>
+			<td>${cookie.cookie}</td>
+			<td>${cookie.valor}</td>
+			<td><a href="#">Modificar</a> | <a href="#">Eliminar</a></td>
+		</tr>`
+	;
 }
