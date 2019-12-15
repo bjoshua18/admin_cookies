@@ -3,6 +3,7 @@
 function listar_cookies() {
 	// TODO: Llamar al metodo get_cookies, para obtener el array de cookies
 	// TODO: Llamar al metodo print_cookies, para modificar la tabla y agregar las cookies
+	print_cookies(get_cookies());
 }
 
 function agregar_cookie(cookie, valor, exp_days, ruta, dominio, segura) {
